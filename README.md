@@ -1,6 +1,6 @@
 # appwrite-migrate-DB
 
-**node.js code (migrate.js) for migrating data from your API to appwrite DB**
+**node.js code (migrate.js) with appwrite SDK for migrating data from your API to appwrite DB**
 
 This small node.js program shows a basic procedure for data migration from your own API (or data in JSON format) to the appwrite DB. You can use this for any other data structure too.
 
@@ -48,17 +48,19 @@ To populate the database, we will need properties from Appwrite such as the Proj
 
 **Explanation of functions**
 
-- The function **"getKeys()"** fetches data from an API (via axios)from a mysql database and maps it to an appropriate array that corresponds to our database structure.
+- The function **"getKeys()"** fetches data from an API (via axios) from the backend (a mysql database) and maps it to an appropriate array that corresponds to our database structure. (you can also use a JSON array as input with your data)
 
 - The function **"migrateDatabase()"** calls the function getKeys(), fetches the data and loops over the array "migKeys" and makes inserts into our described database with the appwrite function "database.createDocument(...)". The DB will be populated.
 
-- with **app.get("/")** you receive the keys in JSON format
+- with **app.get("/")** you receive the keys in JSON format 
 
 - with **app.get('/api/keys')** you can check the result of the appwrite DB after populating
 
 - the programm listens to port 3080 (you can use every other free port)
 
 Execution of the program:
+
+**npm install**
 
 **node migrate.js**
 
@@ -76,5 +78,5 @@ result in appwrite DB:
 <img width="948" alt="image" src="https://user-images.githubusercontent.com/5628117/197235342-5e78c6e6-f37f-40d8-83f4-a675920c781d.png">
 
 
-**Happy migrating with node.js appwrite SDK!**
+**Happy migrating with node.js and appwrite SDK!**
 
