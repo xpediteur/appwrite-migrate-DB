@@ -46,7 +46,7 @@ We will create 2 indexes like shown below so that we can search in the fields la
 
 To populate the database, we will need properties from Appwrite such as the Project ID, Database ID, ApiKey, and Collection ID. We already know how to get the Project ID and Collection ID. The Database ID can be found in the Settings tab of our database. Replace these value in the code migrate.js.
 
-**Explanation of functions**
+**4) Explanation of functions**
 
 - The function **"getKeys()"** fetches data from an API (via axios) from the backend (a mysql database) and maps it to an appropriate array that corresponds to our database structure. (you can also use a JSON array as input with your data)
 
@@ -58,7 +58,7 @@ To populate the database, we will need properties from Appwrite such as the Proj
 
 - the programm listens to port 3080 (you can use every other free port)
 
-Execution of the program:
+**5) Execution of the program**
 
 **npm install**
 
