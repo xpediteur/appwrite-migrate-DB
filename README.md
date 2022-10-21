@@ -4,7 +4,7 @@
 
 This small node.js program shows a basic procedure for data migration from your own API (or data in JSON format) to the appwrite DB.
 
-The API in this example returns the following result. This are keys, stored in an mysql-DB. (you can use use URL for test purposes. No API key needs to be used).
+The API in this example returns the following result. These are keys, stored in an mysql-DB. (you can use the URL for test purposes. No API key needs to be used. This is the officail NACE-Code list - industry classification system -).
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/5628117/197234191-92019b53-55b8-4ca6-9ef6-2b14ab645121.png">
 
