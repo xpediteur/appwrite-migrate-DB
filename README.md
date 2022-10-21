@@ -80,3 +80,5 @@ result in appwrite DB:
 
 **Happy migrating with node.js and appwrite SDK!**
 
+PS: please ignore node_modules ;)
+
