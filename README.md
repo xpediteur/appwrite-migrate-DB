@@ -48,9 +48,15 @@ Explanation of functions
 
 - The function migrateDatabase() calls the function getKeys(), fetches the data and loops over the array "migKeys" and makes inserts into our described database with the appwrite function "database.createDocument(...)". The DB will be populated.
 
+- with app.get("/") you receive the keys in JSON format
+
+- with app.get('/api/keys') you can check the result of the appwrite DB after populating
+
+- the programm listens to port 3080 (you can use every other free port)
+
 Execution of the program:
 
 node migrate.js
 
-
+Happy migrating with appwrite!
 
