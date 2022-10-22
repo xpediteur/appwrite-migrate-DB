@@ -68,7 +68,13 @@ async function migrateDatabase() {
         migKeys.forEach(async(element) => {
             try {
                 console.log("key array ID --> : ", element.KY_KEY, element.KY_VALUE, element.KY_TEXT);
-                await database.createDocument('63446ca755a041305f7f', '635256b413c28b9de0c8', 'unique()', { 'KY_KEY': element.KY_KEY, 'KY_VALUE': element.KY_VALUE, 'KY_TEXT': element.KY_TEXT })
+                await database.createDocument('63446ca755a041305f7f', '635256b413c28b9de0c8', 'unique()', {
+
+                    'KY_KEY': element.KY_KEY,
+                    'KY_VALUE': element.KY_VALUE,
+                    'KY_TEXT': element.KY_TEXT
+
+                })
 
             } catch (e) {
                 console.log(e.message)
