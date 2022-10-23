@@ -73,7 +73,8 @@ key array ID --> :  NACE A1.1.1  Growing of cereals (except rice), leguminous cr
 key array ID --> :  NACE A1.1.2  Growing of rice
 ...`
 
-** 6)result in appwrite DB
+**6)result in appwrite DB
+
 (996 documments inserted in collection - takes about 20-30 sec.)
 
 <img width="948" alt="image" src="https://user-images.githubusercontent.com/5628117/197235342-5e78c6e6-f37f-40d8-83f4-a675920c781d.png">
