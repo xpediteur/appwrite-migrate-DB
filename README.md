@@ -28,7 +28,7 @@ raw data:
 "KY_TEXT": "Growing of nonperennial crops"
 } ...`
 
-#Getting started
+# Getting started
 
 **1) Creating the Database, Collection, and Attributes**
 
